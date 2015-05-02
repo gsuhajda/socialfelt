@@ -1,1 +1,167 @@
-/* page.projects css */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*CONTENT*/
+
+.container{
+  height: 1500px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.container_item{
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 5px;
+  height: 1000px;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+.container_item h1{
+  color: #D96441;
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 20px 0;
+}
+
+.container_item h2{
+  color: #D96441;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.container_item p{
+  color: #403836;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.card{
+  box-sizing: border-box;
+  width: 520px;
+  height: 270px;
+  margin: 0 auto;
+  background-color: #F4F4F4;
+}
+
+.card h1{
+  background-color: #D96441;
+  box-sizing: border-box;
+  color: white;
+  height: 60px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 22px;
+  margin-bottom: 0;
+  padding: 15px 30px 20px 30px;
+}
+
+.card p{
+  box-sizing: border-box;
+  font-size: 14px;
+  float: left;
+  padding: 10px 0 0 30px;
+  width: 347px;
+}
+
+.card img{
+  float: right;
+  padding: 25px 40px 0 0;
+}
+
+.card .description{
+  margin-bottom: 15px;
+}
+
+.card .donation{
+  border-top: 1px solid #E0E0E0;
+  height: 63px;
+}
+
+.donation div{
+  float: left
+}
+
+.donation .donations{
+  height: 63px;
+  width: 174px;
+}
+
+.donation .goal{
+  border-right: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  width: 174px;
+  height: 63px;
+}
+
+.donation .donate_button .btn{
+  background: url("../images/pp_btn.png") 0 0 no-repeat;
+  background-color: #F4F4F4;
+  cursor: pointer;
+  border:none;
+  height: 60px;
+  width: 161px;
+}
+
+.donation .donate_button .btn:hover{
+  background-position: -170 0;
+}
+
+.donation .donate_button .btn:focus{
+  outline:none;
+}
+
+.donation .label{
+  color: #D96441;
+  display: block;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 7px auto 0 auto;
+  margin-top: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.donation .amount{
+  color: #21425B;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: -4px;
+  margin: -4 auto 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
