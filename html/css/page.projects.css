@@ -28,7 +28,7 @@
 /*CONTENT*/
 
 .container{
-  height: 1500px;
+  /*dev*/ height: 1500px;
   margin: 0 auto;
   width: 600px;
 }
@@ -36,7 +36,7 @@
 .container_item{
   background-color: rgba(255, 255, 255, .75);
   border-radius: 5px;
-  height: 1000px;
+  /*dev*/ height: 1000px;
   margin-top: 40px;
   padding: 40px;
 }
@@ -67,43 +67,76 @@
 
 .card{
   box-sizing: border-box;
-  width: 520px;
-  height: 270px;
-  margin: 0 auto;
   background-color: #F4F4F4;
+  margin: 0 auto 40px auto;
+  width: 520px;
+}
+
+.card .card_header{
+  background-color: #D96441;
+  height: 60px;
 }
 
 .card h1{
-  background-color: #D96441;
+
   box-sizing: border-box;
   color: white;
-  height: 60px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 22px;
+  float:left;
   margin-bottom: 0;
-  padding: 15px 30px 20px 30px;
+  padding: 15px 30px 15px 30px;
 }
+
+.card .arrow{
+  background: url("../images/arrow.png") 0 0 no-repeat;
+  display: block;
+  height: 34px;
+  float: right;
+  margin: 16px 20px 0 0;
+  width: 34px;
+}
+
+
+.card .arrow:hover{
+  background: url("../images/arrow.png") 0 -34px no-repeat;
+}
+
+.open .arrow{
+  background: url("../images/arrow.png") 0 -102px no-repeat;
+  display: block;
+  float: right;
+  height: 34px;
+  margin: 16px 20px 0 0;
+  width: 34px;
+}
+
+.open .arrow:hover{
+  background: url("../images/arrow.png") 0 -68px no-repeat;
+}
+
 
 .card p{
   box-sizing: border-box;
   font-size: 14px;
   float: left;
-  padding: 10px 0 0 30px;
+  margin: 0;
+  padding: 30px 0px 30px 30px;
   width: 347px;
 }
 
-.card img{
+.card .picture_small{
   float: right;
   padding: 25px 40px 0 0;
 }
 
-.card .description{
-  margin-bottom: 15px;
-}
-
 .card .donation{
+  bottom: 0;
   border-top: 1px solid #E0E0E0;
+  background-color: #F4F4F4;
   height: 63px;
+  left: 0;
+  position: relative;
 }
 
 .donation div{
@@ -118,8 +151,8 @@
 .donation .goal{
   border-right: 1px solid #E0E0E0;
   border-left: 1px solid #E0E0E0;
-  width: 174px;
   height: 63px;
+  width: 174px;
 }
 
 .donation .donate_button .btn{
@@ -143,13 +176,13 @@
   color: #D96441;
   display: block;
   font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
   margin: 7px auto 0 auto;
   margin-top: 7px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
 }
 
 .donation .amount{
@@ -164,4 +197,39 @@
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.open .picture_big{
+  height: 200px;
+  padding: 0;
+  width: 520px;
+}
+
+.open .picture_small{
+  display: none;
+}
+
+.open .picture_big{
+  display:block
+}
+
+.picture_big{
+  display: none;
+}
+
+.picture_small{
+  display:block;
+}
+
+.open .description p{
+  background-color: #F4F4F4;
+  padding: 30px 30px 30px 30px;
+  width: 520px;
+}
+
+.open .donation{
+  background-color: #F4F4F4;
+  bottom: 0;
+  left: 0;
+  position: relative;
 }
