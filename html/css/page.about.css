@@ -1,1 +1,145 @@
 /* page.about css */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*CONTENT*/
+
+.container_item {
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 5px;
+  height: auto;
+  margin-top: 40px;
+  padding: 32px 40px 40px 40px;
+}
+
+.container_item h1 {
+  color: #D96441;
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.8;
+}
+
+ h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.buttons {
+  margin: 30px 0px 50px 0px;
+  text-align: -webkit-center;
+}
+
+.container .buttons a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 8px 7px 8px;
+}
+
+.container .buttons a:hover {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+  color: #f8f8f8;
+}
+
+.pics {
+  margin: 40px 0px 40px 0px;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+.container img {
+  float: right;
+  border: 2px solid #D96441;
+  border-radius: 5px;
+  margin: 0 0 0 20px;
+  width: 200px;
+}
+
+.container a {
+  color: #D96441;
+}
+
+.container a:hover {
+  color: #f8f8f8;
+}
+
+.container .CV a:visited {
+  color: #403836;
+}
+
+.pics img {
+  float:left;
+  width: 150px;
+  border: none;
+  display: block;
+  height: 150px;
+}
+
+.motto {
+  font-style: italic;
+  margin-top: 40px;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.cta a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+}
+
+.cta a:hover {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+  color: #f8f8f8;
+}
