@@ -75,6 +75,7 @@
 .card .card_header{
   background-color: #D96441;
   height: 60px;
+  opacity: 0.75;
 }
 
 .card h1{
@@ -102,7 +103,7 @@
   background: url("../images/arrow.png") 0 -34px no-repeat;
 }
 
-.open .arrow{
+.card.open .arrow{
   background: url("../images/arrow.png") 0 -102px no-repeat;
   display: block;
   float: right;
@@ -111,7 +112,7 @@
   width: 34px;
 }
 
-.open .arrow:hover{
+.card.open .arrow:hover{
   background: url("../images/arrow.png") 0 -68px no-repeat;
 }
 
@@ -199,18 +200,22 @@
   text-transform: uppercase;
 }
 
-.open .picture_big{
+.card.open .picture_big{
   height: 200px;
   padding: 0;
   width: 520px;
 }
 
-.open .picture_small{
+.card.open .picture_small{
   display: none;
 }
 
-.open .picture_big{
+.card.open .picture_big{
   display:block
+}
+
+.card.open .card_header {
+  opacity: 1;
 }
 
 .picture_big{

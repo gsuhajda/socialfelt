@@ -15,7 +15,12 @@ $(document).ready(function(){
 	$('.card').each(function(){
 		var $card = $(this);
     	$('.arrow',$card).click(function(){
-    	    $card.toggleClass("open");
+    		if ($card.hasClass('open')) {
+    	    	$card.removeClass('open');
+    		} else {
+    	    	$('.card.open').removeClass('open');
+    	    	$card.addClass('open');
+    		}
 	    });
 	});
 });
