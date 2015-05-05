@@ -1,1 +1,19 @@
 /* page.services css */
+img {
+	margin-left: -40px;
+}
+
+tr > td:first-child {
+	font-weight: 700;
+	width: 45%;
+	vertical-align: top;
+}
+
+td {
+	border-top: solid #d96441 1px;
+	padding: 10px 0;
+}
+
+table > tr > td {
+	border-style: none;
+}
