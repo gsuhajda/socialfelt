@@ -24,7 +24,7 @@
   opacity: 0.75;
 }
 
-.card h1{
+.card h2{
 
   box-sizing: border-box;
   color: white;
@@ -205,4 +205,141 @@
 
 .open .description .less_txt{
   display: none;
+}
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+  .menu,
+  .logo{
+    display: none;
+  }
+
+  .container{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 200px;
+  }
+
+  .container_item{
+    width: 100%;
+    padding: 40px;
+    background-color: #C9C8C4;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .donation .donations,
+  .donation .goal,
+  .donation .donate_button{
+    width: 33%;
+  }
+
+  .donation .donate_button .btn{
+    margin: 0 auto;
+    display: block;
+    }
+
+
+}
+
+@media all and (max-width: 600px) {
+  .picture_small{
+    display: none;
+  }
+
+  .description .less_txt{
+    width: 100%;
+    padding: 30px;
+  }
+
+  .donation .donations,
+  .donation .goal{
+    width: 49%;
+    border-right: none;
+  }
+
+  .donation .donate_button{
+    width: 100%;
+    background-color: #F4F4F4;
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .card .donation {
+    height: auto;
+  }
+
+  .card .card_header{
+    height: auto;
+  }
+
+  .card .card_header h2{
+    width: 70%;
+    padding: 10px 5px 20px 30px;
+  }
+
+  .card.open .picture_big,
+  .card.open .picture_big img{
+    width: 100%;
+    height: auto;
+  }
+
+  .open .description p{
+    width: 100%;
+  }
+
+  .card .open .arrow{
+    margin: auto 0;
+  }
+}
+
+  @media all and (max-width: 600px) {
+    .card .card_header h2{
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .card .card_header{
+      position: relative;
+    }
+
+    .card .card_header .arrow{
+      position: relative;
+      bottom: 10px;
+      margin: 0 auto;
+      display: table;
+      width: 34px;
+      float: none;
+    }
+
+    .donation .donations .label,
+    .donation .goal .label{
+      font-size: 10px;
+      padding-top: 5px;
+    }
+
+    .donation .donations .amount,
+    .donation .goal .amount{
+      font-size: 20px;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+  .container .container_item{
+    padding: 20px;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+  .container .container_item:last-child{
+    padding:20px 0px;
+  }
+  .container .container_item .card_h1{
+    margin-left: 20px;
+  }
+
+
 }
