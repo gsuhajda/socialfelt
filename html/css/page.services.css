@@ -1,6 +1,12 @@
 /* page.services css */
-img {
+.services-img {
 	margin-left: -40px;
+}
+
+.services-h3 {
+	font-weight: 400;
+	color: #b87561;
+	margin-top: -15px;
 }
 
 tr > td:first-child {
@@ -14,6 +20,10 @@ td {
 	padding: 10px 0;
 }
 
-table > tr > td {
-	border-style: none;
+.border-top {
+	border-top-color: transparent;
+}
+
+.services-table {
+	margin-bottom: 20px;
 }
