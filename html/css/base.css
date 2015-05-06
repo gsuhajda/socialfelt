@@ -1,189 +1,190 @@
 body{
-  color: #403836;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  background: url('../images/back_main.jpg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+	color: #403836;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	background: url('../images/back_main.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .page_main{
-  background: url('../images/back_main.jpg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+	background: url('../images/back_main.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 /* TOOLS */
 
 /**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    contenteditable attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that are clearfixed.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 
 /**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
 .cf {
-    *zoom: 1;
+	*zoom: 1;
 }
 
-/*MENU*/
+/* MENU */
 
 .header {
-  height: 140px;
-  left: 90px;
-  position: fixed;
-  top: 30px;
-  width: 140px;
+	height: 140px;
+	left: 90px;
+	position: fixed;
+	top: 30px;
+	width: 140px;
 }
 
 .header h1 {  /* normalize >:( */
-  margin: 0;
+	margin: 0;
 }
 
 .logo{
-  background: url('../images/socialfelt_logo.png') 0 0 no-repeat;
-  background-size: 280px 140px;
-  cursor: pointer;
-  display: block;
-  height: 140px;
-  overflow: hidden;
-  text-indent: 110%;
-  width: 140px;
+	background: url('../images/socialfelt_logo.png') 0 0 no-repeat;
+	background-size: 280px 140px;
+	cursor: pointer;
+	display: block;
+	height: 140px;
+	overflow: hidden;
+	text-indent: 110%;
+	width: 140px;
 }
 
 .logo:hover{
-  background-position: -140px 0;
+	background-position: -140px 0;
 }
 
 .menu {
-  color: white;
-  font-family: 'Noto Serif', serif;
-  font-size: 18px;
-  left: 70px;
-  position: fixed;
-  text-shadow: 1px 1px 2px black;
-  top: 170px;
-  width: 200px;
+	color: white;
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+	left: 70px;
+	position: fixed;
+	text-shadow: 1px 1px 2px black;
+	top: 170px;
+	width: 200px;
 }
 
 .menu ul{
-  padding-left: 0px;
+	padding-left: 0px;
 }
 
 .menu li{
-  list-style-type: none;
-  margin-top: 4px;
+	list-style-type: none;
+	margin-top: 4px;
 }
 
 .menu a{
-  color: white;
-  display: block;
-  margin: 0 -15px;
-  padding: 3px 15px;
-  text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 -15px;
+	padding: 3px 15px;
+	text-decoration: none;
 }
 
 .menu a:hover,
 .menu a.active{
-  color: #D96441;
-  background-color: rgba(255, 255, 255, .75);
-  border-radius: 5px;
-  text-shadow: none;
+	color: #D96441;
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	text-shadow: none;
 }
 
 .mainmenu li{
-  text-transform: none;
+	text-transform: none;
 }
 
 .submenu{
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .submenu li{
-  padding-left: 40px;
-  text-transform: capitalize;
+	padding-left: 40px;
+	text-transform: capitalize;
 }
 
 .links{
-  border-top: 2px solid rgba(255, 255, 255, .3);
-  border-bottom: 2px solid rgba(255, 255, 255, .3);
-  margin: 25px 0px;
-  padding: 7px 0 15px 0;
+	border-top: 2px solid rgba(255, 255, 255, .3);
+	border-bottom: 2px solid rgba(255, 255, 255, .3);
+	margin: 25px 0px;
+	padding: 7px 0 15px 0;
 }
 
 .links a{
-  display: block;
-  padding-left: 55px;
-  position: relative;
+	display: block;
+	padding-left: 55px;
+	position: relative;
 }
 
 .links a:before {
-  background: url('../images/icons.png') no-repeat;
-  content: '';
-  display: block;
-  height: 24px;
-  left: 15px;
-  position: absolute;
-  top: 3px;
-  width: 24px;
+	background: url('../images/icons.png') no-repeat;
+	content: '';
+	display: block;
+	height: 24px;
+	left: 15px;
+	position: absolute;
+	top: 3px;
+	width: 24px;
 }
 
 .links a:hover{
-  color: #D96441;
-  background-color: rgba(255, 255, 255, .75);
-  border-radius: 5px;
-  text-shadow: none;
+	color: #D96441;
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	text-shadow: none;
 }
 
 .links .blog a:before{
-  background-position: 0 0;
+	background-position: 0 0;
 }
 
 .links .blog a:hover:before{
-  background-position: -24px 0;
+	background-position: -24px 0;
 }
 
 .links .shop a:before{
-  background-position: 0 -24px;
+	background-position: 0 -24px;
 }
 
 .links .shop a:hover:before{
-  background-position: -24px -24px;
+	background-position: -24px -24px;
 }
 
-/*CONTENT*/
+/* CONTENT */
 
 .container{
-  min-height: 400px;
-  margin: 0 auto;
-  width: 600px;
+	min-height: 400px;
+	margin: 0 auto;
+	width: 600px;
+	position: relative;
+	left: 140px;
 }
 
 .container_item{
-  background-color: rgba(255, 255, 255, .75);
-  border-radius: 5px;
-  min-height: 400px;
-  margin-top: 40px;
-  width: 600px;
-  padding: 30px 40px;
-  box-sizing: border-box;
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	min-height: 400px;
+	margin-top: 40px;
+	padding: 30px 40px;
+	box-sizing: border-box;
 }
 
 .container_item:last-child{
@@ -191,21 +192,69 @@ body{
 }
 
 .container_item h1{
-  color: #D96441;
-  font-family: 'Noto Serif', serif;
-  font-weight: 700;
-  font-size: 32px;
-  margin: 0 0 15px 0;
+	color: #D96441;
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 15px 0;
 }
 
 .container_item h2{
-  color: #D96441;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  margin: 0 0 15px 0;
+	color: #D96441;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.4;
+	margin: 0 0 15px 0;
 }
 
 .container_item p{
 }
 
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+
+}
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+	.header {
+		left: 50px;
+	}
+
+	.menu {
+		font-size: 16px;
+		left: 30px;
+		width: 180px;
+	}
+
+	.container {
+		left: 110px;
+		width: 500px;
+	}
+
+	.container_item {
+		padding: 30px 25px;
+	}
+}
+
+/* sub1024 */
+@media all and (min-width: 860px) and (max-width: 1023px) {
+	.header {
+		left: 50px;
+	}
+
+	.menu {
+		left: 30px;
+	}
+
+	.container {
+		left: 120px;
+	}
+}
+
+/* big screen */
+@media all and (min-width: 1600px) {
+	.container {
+		left: auto; /* center the container */
+	}
+}
