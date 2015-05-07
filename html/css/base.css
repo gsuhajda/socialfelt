@@ -14,6 +14,7 @@ body > .bg {
 	width: 100%;
 	height: 100%;
 	z-index: 10;
+	background-image: url('../images/back_main.jpg');
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -52,6 +53,12 @@ body.page_main > .bg {
 	*zoom: 1;
 }
 
+/* override normalize */
+figure,
+.header h1 {
+	margin: 0;
+}
+
 /* MENU */
 
 .header {
@@ -61,10 +68,6 @@ body.page_main > .bg {
 	top: 30px;
 	width: 140px;
 	z-index: 20;
-}
-
-.header h1 {  /* normalize >:( */
-	margin: 0;
 }
 
 .logo{
@@ -224,7 +227,44 @@ body.page_main > .bg {
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
+	.container{
+		width: auto;
+		position: relative;
+		left: auto;
+		margin: 0 20px;
+		top: 200px;
+	}
+}
 
+@media all and (max-width: 600px) {
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+
+	.container_item {
+		border-radius: 0;
+	}
+}
+
+@media all and (max-width: 400px) {
+	body > .bg {
+		position: absolute;
+		bottom: auto;
+		width: 100%;
+		height: 200px;
+	}
+
+	.container_item {
+		padding: 20px;
+		border-radius: 0px;
+		margin: 0;
+		background: #c6c4c3;
+	}
+
+	.container_item:last-child{
+		margin-bottom: 0;
+	}
 }
 
 /* ipad portrait and up */

@@ -214,19 +214,6 @@
     display: none;
   }
 
-  .container{
-    width: 100%;
-    position: relative;
-    left: 0;
-    top: 200px;
-  }
-
-  .container_item{
-    width: 100%;
-    padding: 40px;
-    background-color: #C9C8C4;
-  }
-
   .card{
     width: 100%;
   }
@@ -332,11 +319,13 @@
     padding: 20px;
     border-radius: 0px;
     margin: 0;
+    background: #c6c4c3;
   }
 
   .container .container_item:last-child{
     padding:20px 0px;
   }
+  
   .container .container_item .card_h1{
     margin-left: 20px;
   }

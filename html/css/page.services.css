@@ -37,6 +37,14 @@ td {
 		display: none;
 	}
 
+	.menu {
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 40;
+	}
+
 	.menu .toggle {
 		background: yellow;
 		height: 50px;
@@ -44,17 +52,26 @@ td {
 		position: absolute;
 		top: 0;
 		right: 0;
-		margin-top: -180px;
-		z-index: 12000;
 	}
 
+	#nav:target .menu {
+		background: #000;
+	}
+
+	.links,
 	.mainmenu {
 		display: none;
 	}
 
+	#nav:target .links,
 	#nav:target .mainmenu {
 		display: block;
+		margin-top: 40px;
 	}	
+	
+	#nav:target .links {
+		margin-top: 0;
+	}
 
 	/*
 	.mainmenu .close {
