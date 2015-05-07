@@ -27,3 +27,80 @@ td {
 .services-table {
 	margin-bottom: 20px;
 }
+
+
+
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+	.header {
+		display: none;
+	}
+
+	.menu .toggle {
+		background: yellow;
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-top: -180px;
+		z-index: 12000;
+	}
+
+	.mainmenu {
+		display: none;
+	}
+
+	#nav:target .mainmenu {
+		display: block;
+	}	
+
+	/*
+	.mainmenu .close {
+		display: none;
+	}
+	*/
+
+	/*
+	#nav:target .mainmenu .close {
+		display: block;
+	}
+	*/
+
+	.logo {
+		top: 0;
+		height: 48px;
+		margin-top: -38px;
+	}
+
+	.container {
+		left: 0;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.services-img img {
+		margin-left: 40px;
+		width: 100%;
+	}
+}
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+	.services-img img {
+		margin-left: 15px;
+		width: 500px;
+	}
+}
+
+/* sub1024 */
+@media all and (min-width: 860px) and (max-width: 1023px) {
+	
+}
+
+/* big screen */
+@media all and (min-width: 1600px) {
+
+}

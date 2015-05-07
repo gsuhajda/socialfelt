@@ -42,10 +42,10 @@ input[type="email"] {
 
 textarea {
 	height: 165px;
-    max-width: 520px;
-    max-height: 400px;
-    line-height: 20px;
-    padding: 10px 13px;
+	max-width: 520px;
+	max-height: 400px;
+	line-height: 20px;
+	padding: 10px 13px;
 }
 
 select,
@@ -68,7 +68,7 @@ input[type='submit'] {
 	color: #dc5656;
 	width: 250px;
 	height: 50px;
-	margin-left: 25%;
+	margin: auto;
 	margin-top: 24px;
 	border: 1px solid #D96441;
 	border-radius: 5px;
@@ -84,4 +84,45 @@ input[type='submit']:hover {
 	text-align: center;
 	padding: 7px 9px 7px 9px;
 	color: #f8f8f8;
+}
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+	.menu,
+	.logo {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		position: relative;
+		left: 0;
+		top: 200px;
+	}
+
+	input[type='submit'] {
+		width: 210px;
+		margin: auto;
+		margin-top: 24px;
+		}
+
+	textarea {
+		min-width: 100%;
+	}
+}
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+
+}
+
+/* sub1024 */
+@media all and (min-width: 860px) and (max-width: 1023px) {
+
+}
+
+
+/* big screen */
+@media all and (min-width: 1600px) {
+	
 }
