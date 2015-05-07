@@ -1,3 +1,50 @@
+
+
+.menu .social li{
+  display: block;
+  float: left;
+  text-indent: 110%;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  margin-right: 30px;
+}
+
+.menu .social .f{
+  background: url("../images/icon_f.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .t{
+  background: url("../images/icon_t.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .p{
+  background: url("../images/icon_p.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .f:hover{
+  background: url("../images/icon_f_hover.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .t:hover{
+  background: url("../images/icon_t_hover.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .p:hover{
+  background: url("../images/icon_p_hover.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social a:hover{
+  background-color: rgba(255, 255, 255, .0);
+}
+
+
 /* page.projects css */
 .page-projects{
   background: url('../images/back_projects.jpg') no-repeat;
