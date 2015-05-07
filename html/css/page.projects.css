@@ -106,7 +106,6 @@
 
 .donation .donate_button .btn{
   background: url("../images/pp_btn.png") 0 0 no-repeat;
-  background-color: #F4F4F4;
   cursor: pointer;
   border:none;
   height: 60px;
@@ -148,10 +147,10 @@
   text-transform: uppercase;
 }
 
-.card.open .picture_big{
-  height: 200px;
-  padding: 0;
-  width: 520px;
+
+
+.card.open .picture_big img{
+  width: 100%;
 }
 
 .card.open .picture_small{
@@ -172,6 +171,10 @@
 
 .picture_small{
   display:block;
+}
+
+.picture_small img{
+  border-radius: 95px;
 }
 
 .open .description p{
@@ -208,13 +211,17 @@
 }
 
 /* small screen, "mobile" */
-@media all and (max-width: 767px) {
-  .menu,
-  .logo{
-    display: none;
+@media (max-width: 859px) and (min-width: 768px){
+  .card{
+    width: 100%;
   }
 
-  .card{
+  .card p{
+    width: 65%;
+  }
+
+  .open .description p,
+  .open .picture_big{
     width: 100%;
   }
 
@@ -227,9 +234,41 @@
   .donation .donate_button .btn{
     margin: 0 auto;
     display: block;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    background-color: none;
     }
 
+}
 
+@media all and (max-width: 767px) {
+  .menu,
+  .logo{
+    display: none;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .card .less_txt{
+    width: 70%;
+  }
+
+  .donation .donations,
+  .donation .goal,
+  .donation .donate_button{
+    width: 33%;
+  }
+
+  .donation .donate_button .btn{
+    margin: 0 auto;
+    display: block;
+    }
+  .open .description .more_txt{
+    width: 100%;
 }
 
 @media all and (max-width: 600px) {
@@ -325,7 +364,7 @@
   .container .container_item:last-child{
     padding:20px 0px;
   }
-  
+
   .container .container_item .card_h1{
     margin-left: 20px;
   }
