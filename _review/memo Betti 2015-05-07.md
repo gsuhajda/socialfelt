@@ -4,6 +4,10 @@
 - hatterkepek az invisionben levok alapjan
 - hosszabb sorok
 - bevezeto "nem annyira fontos", nem kell ennyire kiemelni
+- social csatornak linkelese
+	- Pinterest: https://www.pinterest.com/socialfelt/
+	- Facebook: https://www.facebook.com/SocialFelt
+	- Twitter: https://twitter.com/SocialFelt
 
 # nyito
 - a kepek a learn more felett legyenek
