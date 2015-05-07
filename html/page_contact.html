@@ -48,28 +48,27 @@
 
 				<form method="post" enctype="multipart/form-data">
 					<div>
-					<label for="name-inp">Your name:</label>
-					<input type="text" id="name-inp" name="name" placeholder="Example Name">
+						<label for="name-inp">Your name:</label>
+						<input type="text" id="name-inp" name="name" placeholder="Example Name">
+					</div>
 
-					<label for="email-inp">Your e-mail: <span>*</span></label>
-					<input type="text" id="email-inp" name="email" placeholder="name@example.com" required>
+					<div>
+						<label for="email-inp">Your e-mail: <span>*</span></label>
+						<input type="text" id="email-inp" name="email" placeholder="name@example.com" required>
+					</div>
 
-					<label for="subject-inp">Subject:</label>
-					<select id="subject-inp" name="subject">
-						<option disabled selected>Choose a subject!</option>
-						<option value="1">Subject 1</option>
-						<option value="2">Subject 2</option>
-						<option value="3">Subject 3</option>
-						<option value="4">Subject 4</option>
-						<option value="5">Subject 5</option>
-						<option value="6">Subject 6</option>
-						<option value="7">Other</option>
-					</select>
+					<div>
+						<label for="subject-inp">Subject:</label>
+						<input type="text" id="subject-inp" name="subject" placeholder="Example subject">
+					</div>
 
-					<label for="message-inp">Your message: <span>*</span></label>
-					<textarea id="message-inp" name="message" placeholder="Write here your message..." required></textarea>
+					<div>
+						<label for="message-inp">Your message: <span>*</span></label>
+						<textarea id="message-inp" name="message" placeholder="Write here your message..." required></textarea>
+					</div>
 
-					<input type="submit" value="Send message" name="send">
+					<div>
+						<input type="submit" value="Send message" name="send">
 					</div>
 				</form>
 			</article>
