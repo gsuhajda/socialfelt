@@ -11,6 +11,10 @@
   padding: 20px 25px 10px 25px;
 }
 
+.container_item{
+  min-height: 300px;;
+}
+
 .card{
   box-sizing: border-box;
   background-color: #F4F4F4;
@@ -77,6 +81,7 @@
 .card .picture_small{
   float: right;
   padding: 25px 40px 0 0;
+  margin-bottom: 20px;
 }
 
 .card .donation{
