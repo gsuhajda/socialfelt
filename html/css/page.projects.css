@@ -44,6 +44,30 @@
   background-color: rgba(255, 255, 255, .0);
 }
 
+.charity_logo{
+  margin: 50px auto;
+  width: 184px;
+  height: 78px;
+
+
+}
+
+.charity_logo a{
+  background: url("../images/charity_logo.png") 0 0 no-repeat;
+  overflow: hidden;
+  text-indent: -120%;
+  display: block;
+  width: 184px;
+  height: 78px;
+}
+
+.charity_logo a:hover{
+  background-position: -184 0;
+  width: 184px;
+  height: 78px;
+}
+
+
 
 /* page.projects css */
 .page-projects{
