@@ -225,6 +225,16 @@ figure,
 .container_item p{
 }
 
+.container_item a{
+  text-decoration: none;
+  color: #D96441;
+}
+
+.container_item a:hover {
+  text-decoration: underline;
+  color: #D96441;
+}
+
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
 	.container{
