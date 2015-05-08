@@ -268,6 +268,8 @@ figure,
 	font-weight: 700;
 	font-size: 32px;
 	margin: 0 0 15px 0;
+	letter-spacing: -1px;
+	text-rendering: optimizeLegibility;
 }
 
 .container_item h2{
@@ -325,7 +327,7 @@ figure,
 	.menu .submenu li:first-child{
 		margin-top: 4px;
 	}
-	
+
 	.menu .mainmenu {
 		margin: 15px 0;
 	}
