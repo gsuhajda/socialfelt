@@ -1,6 +1,7 @@
 /* page.services css */
 .services-img {
 	margin-left: -40px;
+	margin-bottom: 15px;
 }
 
 .services-h3 {
@@ -9,9 +10,6 @@
 	margin-top: -15px;
 }
 
-.services-h2 {
-	margin-top: 15px;
-}
 
 /* táblázatos verzió
 
@@ -52,6 +50,18 @@ dl dd {
 	margin: 0;
 	border-top: solid #d96441 1px;
 	padding: 10px 0;
+}
+
+dl dd:last-child {
+	margin-bottom: 15px;
+}
+
+dl dt:first-child {
+	border-top: transparent;
+}
+
+.dd-top-border {
+	border-top: transparent;
 }
 
 h2 {

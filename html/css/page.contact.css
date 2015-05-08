@@ -112,13 +112,6 @@ input[type='submit']:hover {
 	font-weight: 700;
 }
 
-.error-message {
-	top: 225px;
-}
-
-.error-email {
-	top: 62px;
-}
 
 .message input[type='text']:focus,
 .email input[type='email']:focus {
@@ -150,6 +143,13 @@ input[type='submit']:hover {
 		position: static;
 		margin-top: 0;
 	}
+
+	.error-message {
+	top: 225px;
+}
+
+.error-email {
+	top: 62px;
 
 }
 
