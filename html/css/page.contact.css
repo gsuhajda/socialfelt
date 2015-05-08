@@ -22,8 +22,8 @@ label {
 }
 
 textarea,
-input[type="text"],
-input[type="email"] {
+input[type='text'],
+input[type='email'] {
     width: 100%;
     font-family: inherit;
     font-size: 14px;
@@ -42,14 +42,14 @@ textarea {
 	padding: 10px 13px;
 }
 
-input[type="text"], 
-input[type="email"] {
+input[type='text'], 
+input[type='email'] {
     height: 40px;
     line-height: 40px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
+input[type='text']:focus,
+input[type='email']:focus,
 textarea:focus {
     border-color: rgba(74, 66, 97, 1);
     outline: 0;
@@ -102,13 +102,15 @@ input[type='submit']:hover {
 
 .error-email,
 .error-message {
-	float: right;
+	position: absolute;
+	right: 0;
 	color: #ed1c24;
 	font-weight: 700;
+	margin-right: 40px;
 }
 
-.message input[type="text"]:focus,
-.email input[type="email"]:focus {
+.message input[type='text']:focus,
+.email input[type='email']:focus {
     border-color: #ed1c24;
 	outline: 0;
 } 
