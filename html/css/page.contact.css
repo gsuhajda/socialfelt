@@ -9,6 +9,10 @@ form > div {
 	margin-top: 20px;
 }
 
+form {
+	position: relative;
+}
+
 input,
 textarea {
 	width: 520px;
@@ -106,7 +110,14 @@ input[type='submit']:hover {
 	right: 0;
 	color: #ed1c24;
 	font-weight: 700;
-	margin-right: 40px;
+}
+
+.error-message {
+	top: 225px;
+}
+
+.error-email {
+	top: 62px;
 }
 
 .message input[type='text']:focus,
@@ -130,6 +141,14 @@ input[type='submit']:hover {
 
 	textarea {
 		min-width: 100%;
+	}
+
+	/* ERROR page*/
+
+	.error-email,
+	.error-message {
+		position: static;
+		margin-top: 0;
 	}
 
 }
