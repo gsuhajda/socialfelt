@@ -53,8 +53,7 @@ input[type="email"]:focus,
 textarea:focus {
     border-color: rgba(74, 66, 97, 1);
     outline: 0;
-} 
-
+}
 
 input[type='submit'] {
 	background: white;
@@ -104,30 +103,21 @@ input[type='submit']:hover {
 .error-email,
 .error-message {
 	float: right;
-	color: red;
+	color: #ed1c24;
 	font-weight: 700;
 }
 
 .message input[type="text"]:focus,
 .email input[type="email"]:focus {
-    border-color: red;
+    border-color: #ed1c24;
 	outline: 0;
 } 
-
-
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
 	.menu,
 	.logo {
 		display: none;
-	}
-
-	.container {
-		width: 100%;
-		position: relative;
-		left: 0;
-		top: 200px;
 	}
 
 	input[type='submit'] {

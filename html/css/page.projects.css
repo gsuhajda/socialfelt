@@ -1,9 +1,13 @@
-
 /* page.projects css */
-.page-projects{
-  background: url('../images/back_projects.jpg') no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
+body.page-projects > .bg {
+  background-image: url('../images/back_projects.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-projects .charity_logo{
+    background-image: url('../images/back_projects.jpg');
+  }
 }
 
 .support_text{

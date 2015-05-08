@@ -113,91 +113,52 @@ figure {
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-.menu,
-.logo {
-  display: none;
+  .menu,
+  .logo {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .pics img {
+    float: none;
+  }
+
+  .container .pics .mobile img {
+    margin: auto;
+  }
+
+  .container .pics .desktop img {
+    display: none;
+  }
 }
-
-.container {
-  width: 100%;
-  position: relative;
-  left: 0;
-  top: 200px;
-}
-
-.container_item {
-  width: 100%;
-  padding: 40px;
-  background-color: #C9C8C4;
-}
-
-.card {
-  width: 100%;
-}
-
-.pics img {
-  float: none;
-}
-
-.container .pics .mobile img {
-  margin: auto;
-}
-
-.container .pics .desktop img {
-  display: none;
-}
-}
-
-
-
 
 /* ipad portrait and up */
 @media all and (min-width: 768px) and (max-width: 859px) {
-.pics img {
-  float: none;
-}
+  .pics img {
+    float: none;
+  }
 
-.container .pics .mobile img {
-  margin: auto;
-}
+  .container .pics .mobile img {
+    margin: auto;
+  }
 
-.container .pics .desktop img {
-  display: none;
-}
+  .container .pics .desktop img {
+    display: none;
+  }
 
-.desktop figure {
-  display: none;
-}
+  .desktop figure {
+    display: none;
+  }
 
-.pics {
-  margin: 0px;
-}
+  .pics {
+    margin: 0px;
+  }
 
-figure {
-  margin: 0px;
-}
+  figure {
+    margin: 0px;
+  }
 
-
-
-
-
-
-  .header {
-		left: 50px;
-	}
-
-	.menu {
-		font-size: 16px;
-		left: 30px;
-		width: 180px;
-	}
-
-	.container {
-		left: 110px;
-		width: 500px;
-	}
-
-	.container_item {
-		padding: 30px 25px;
-	}
 }
