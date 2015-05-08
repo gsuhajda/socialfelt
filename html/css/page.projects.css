@@ -1,74 +1,4 @@
 
-
-.menu .social li{
-  display: block;
-  float: left;
-  text-indent: 110%;
-  overflow: hidden;
-  width: 32px;
-  height: 32px;
-  margin-right: 30px;
-}
-
-.menu .social .f{
-  background: url("../images/icon_f.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .t{
-  background: url("../images/icon_t.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .p{
-  background: url("../images/icon_p.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .f:hover{
-  background: url("../images/icon_f_hover.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .t:hover{
-  background: url("../images/icon_t_hover.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social .p:hover{
-  background: url("../images/icon_p_hover.png") 0 0 no-repeat;
-  background-size: 32px 32px;
-}
-
-.menu .social a:hover{
-  background-color: rgba(255, 255, 255, .0);
-}
-
-.charity_logo{
-  margin: 50px auto;
-  width: 184px;
-  height: 78px;
-
-
-}
-
-.charity_logo a{
-  background: url("../images/charity_logo.png") 0 0 no-repeat;
-  overflow: hidden;
-  text-indent: -120%;
-  display: block;
-  width: 184px;
-  height: 78px;
-}
-
-.charity_logo a:hover{
-  background-position: -184 0;
-  width: 184px;
-  height: 78px;
-}
-
-
-
 /* page.projects css */
 .page-projects{
   background: url('../images/back_projects.jpg') no-repeat;
@@ -83,7 +13,7 @@
 }
 
 .container_item{
-  min-height: 300px;;
+  min-height: 300px;
 }
 
 .card{
@@ -100,7 +30,6 @@
 }
 
 .card h2{
-
   box-sizing: border-box;
   color: white;
   font-family: 'Noto Sans', sans-serif;
@@ -120,7 +49,6 @@
   width: 34px;
 }
 
-
 .card .arrow:hover{
   background: url("../images/arrow.png") 0 -34px no-repeat;
 }
@@ -138,7 +66,6 @@
 .card.open .arrow:hover{
   background: url("../images/arrow.png") 0 -68px no-repeat;
 }
-
 
 .card p{
   box-sizing: border-box;
@@ -222,8 +149,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-
 
 .card.open .picture_big img{
   width: 100%;
@@ -315,7 +240,7 @@
     right: 0;
     overflow: hidden;
     background-color: none;
-    }
+  }
 
 }
 
@@ -342,9 +267,11 @@
   .donation .donate_button .btn{
     margin: 0 auto;
     display: block;
-    }
+  }
+
   .open .description .more_txt{
     width: 100%;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -397,35 +324,35 @@
   }
 }
 
-  @media all and (max-width: 600px) {
-    .card .card_header h2{
-      margin-top: 10px;
-      width: 100%;
-    }
+@media all and (max-width: 600px) {
+  .card .card_header h2{
+    margin-top: 10px;
+    width: 100%;
+  }
 
-    .card .card_header{
-      position: relative;
-    }
+  .card .card_header{
+    position: relative;
+  }
 
-    .card .card_header .arrow{
-      position: relative;
-      bottom: 10px;
-      margin: 0 auto;
-      display: table;
-      width: 34px;
-      float: none;
-    }
+  .card .card_header .arrow{
+    position: relative;
+    bottom: 10px;
+    margin: 0 auto;
+    display: table;
+    width: 34px;
+    float: none;
+  }
 
-    .donation .donations .label,
-    .donation .goal .label{
-      font-size: 10px;
-      padding-top: 5px;
-    }
+  .donation .donations .label,
+  .donation .goal .label{
+    font-size: 10px;
+    padding-top: 5px;
+  }
 
-    .donation .donations .amount,
-    .donation .goal .amount{
-      font-size: 20px;
-    }
+  .donation .donations .amount,
+  .donation .goal .amount{
+    font-size: 20px;
+  }
 
 }
 
@@ -444,6 +371,5 @@
   .container .container_item .card_h1{
     margin-left: 20px;
   }
-
 
 }

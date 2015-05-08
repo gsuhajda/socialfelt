@@ -103,7 +103,11 @@ figure,
 
 .menu li{
 	list-style-type: none;
-	margin-top: 4px;
+	margin-top: 5px;
+}
+
+.menu li:first-child{
+	margin-top: 0;
 }
 
 .menu a{
@@ -122,33 +126,36 @@ figure,
 	text-shadow: none;
 }
 
-.mainmenu li{
-	text-transform: none;
+.menu .mainmenu {
+	margin: 25px 0px;
 }
 
-.submenu{
+.menu .submenu{
 	font-size: 14px;
 }
 
-.submenu li{
+.menu .submenu li{
 	padding-left: 40px;
-	text-transform: capitalize;
 }
 
-.links{
+.menu .submenu li:first-child{
+	margin-top: 5px;
+}
+
+.menu .links{
 	border-top: 2px solid rgba(255, 255, 255, .3);
 	border-bottom: 2px solid rgba(255, 255, 255, .3);
 	margin: 25px 0px;
 	padding: 7px 0 15px 0;
 }
 
-.links a{
+.menu .links a{
 	display: block;
 	padding-left: 55px;
 	position: relative;
 }
 
-.links a:before {
+.menu .links a:before {
 	background: url('../images/icons.png') no-repeat;
 	content: '';
 	display: block;
@@ -159,27 +166,75 @@ figure,
 	width: 24px;
 }
 
-.links a:hover{
+.menu .links a:hover{
 	color: #D96441;
 	background-color: rgba(255, 255, 255, .75);
 	border-radius: 5px;
 	text-shadow: none;
 }
 
-.links .blog a:before{
+.menu .links .blog a:before{
 	background-position: 0 0;
 }
 
-.links .blog a:hover:before{
+.menu .links .blog a:hover:before{
 	background-position: -24px 0;
 }
 
-.links .shop a:before{
+.menu .links .shop a:before{
 	background-position: 0 -24px;
 }
 
-.links .shop a:hover:before{
+.menu .links .shop a:hover:before{
 	background-position: -24px -24px;
+}
+
+/* social */
+
+.menu .social li{
+  display: block;
+  float: left;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+.menu .social .f{
+  background: url("../images/icon_f.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .t{
+  background: url("../images/icon_t.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .p{
+  background: url("../images/icon_p.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .f:hover{
+  background: url("../images/icon_f_hover.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .t:hover{
+  background: url("../images/icon_t_hover.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social .p:hover{
+  background: url("../images/icon_p_hover.png") 0 0 no-repeat;
+  background-size: 32px 32px;
+}
+
+.menu .social a:hover{
+  background-color: rgba(255, 255, 255, .0);
 }
 
 /* CONTENT */
@@ -233,6 +288,59 @@ figure,
 .container_item a:hover {
   text-decoration: underline;
   color: #D96441;
+}
+
+.charity_logo{
+  margin: 50px auto;
+  width: 184px;
+  height: 78px;
+}
+
+.charity_logo a{
+  background: url("../images/charity_logo.png") 0 0 no-repeat;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  display: block;
+  width: 184px;
+  height: 78px;
+}
+
+.charity_logo a:hover{
+  background-position: -184px 0;
+}
+
+/* small height */
+@media all and (max-height: 700px) {
+	.header {
+		top: 20px;
+	}
+
+	.menu {
+		top: 160px;
+	}
+
+	.menu li,
+	.menu .submenu li:first-child{
+		margin-top: 4px;
+	}
+	
+	.menu .mainmenu {
+		margin: 15px 0;
+	}
+
+	.menu .links {
+		margin: 15px 0;
+		padding-bottom: 10px;
+	}
+}
+
+/* even smaller height */
+@media all and (max-height: 640px) {
+	.header,
+	.menu {
+		position: absolute;
+	}
 }
 
 /* small screen, "mobile" */
@@ -314,9 +422,20 @@ figure,
 	}
 }
 
-/* big screen */
+/* big wide screen */
 @media all and (min-width: 1600px) {
 	.container {
 		left: auto; /* center the container */
+	}
+}
+
+/* big tall screen */
+@media all and (min-height: 900px) {
+	.container_item {
+		margin-top: 60px;
+	}
+
+	.container_item:last-child{
+		margin-bottom: 60px;
 	}
 }
