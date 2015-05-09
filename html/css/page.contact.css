@@ -7,9 +7,6 @@ label span {
 
 form > div {
 	margin-top: 20px;
-}
-
-form {
 	position: relative;
 }
 
@@ -104,18 +101,18 @@ input[type='submit']:hover {
 
 /* ERROR page*/
 
-.error-email,
 .error-message {
 	position: absolute;
+	top: 0; 
 	right: 0;
 	color: #ed1c24;
 	font-weight: 700;
 }
 
-
-.message input[type='text']:focus,
-.email input[type='email']:focus {
+.error textarea,
+.error input[type='email'] {
     border-color: #ed1c24;
+    border-width: 2px;
 	outline: 0;
 } 
 
@@ -137,8 +134,6 @@ input[type='submit']:hover {
 	}
 
 	/* ERROR page*/
-
-	.error-email,
 	.error-message {
 		position: static;
 		margin-top: 0;
