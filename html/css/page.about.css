@@ -5,16 +5,32 @@ body.page-main > .bg {
 }
 
 body.page-about-aims > .bg {
-  background-image: url('../images/back_about_aims.jpg');
+  background-image: url('../images/aims_bg.jpg');
+}
+
+body.page-about-beginnings > .bg {
+  background-image: url('../images/beginnings_bg.jpg');
+}
+
+body.page-about-whatisfelt > .bg {
+  background-image: url('../images/whatisfelt_bg.jpg');
 }
 
 @media all and (max-width: 400px) {
   body.page-main .charity_logo{
     background-image: url('../images/back_main.jpg');
   }
-  
+
   body.page-about-aims .charity_logo{
     background-image: url('../images/back_about_aims.jpg');
+  }
+
+  body.page-about-beginnings .charity_logo{
+    background-image: url('../images/beginnings_bg.jpg');
+  }
+
+  body.page-about-whatisfelt .charity_logo{
+    background-image: url('../images/whatisfelt_bg.jpg');
   }
 }
 
@@ -166,7 +182,7 @@ body.page-about-aims > .bg {
     text-decoration: none;
     border: 1px solid #D96441;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 20px 0px 20px 0px;
     text-align: center;
     padding: 7px 8px 7px 8px;
     float: none;
@@ -179,7 +195,7 @@ body.page-about-aims > .bg {
     border: 1px solid #D96441;
     background-color: #D96441;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
     padding: 7px 8px 7px 8px;
     color: #f8f8f8;
