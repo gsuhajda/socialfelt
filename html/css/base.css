@@ -305,18 +305,36 @@ figure,
   height: 78px;
 }
 
-.charity_logo a{
-  background: url("../images/charity_logo.svg") 0 0 no-repeat;
-	background-size: 368px 78px;
+.charity_logo a {
+  display: block;
+  width: 184px;
+  height: 78px;  
+  padding: 10px 15px;
   overflow: hidden;
   text-indent: 110%;
   white-space: nowrap;
+  position: relative;
+  border-radius: 10px;
+}
+
+.charity_logo a:before{
+  content: '';
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -39px 0 0 -92px;
+  background: url("../images/charity_logo.svg") 0 0 no-repeat;
+  background-size: 368px 78px;
   width: 184px;
   height: 78px;
 }
 
-.charity_logo a:hover{
+.charity_logo a:hover {
+	background: rgba(255,255,255,0.75);
+}
+
+.charity_logo a:hover:before{
   background-position: -184px 0;
 }
 
@@ -388,10 +406,6 @@ figure,
 		z-index:200;
 	}
 
-	.toggle.close{
-	display: none;
-}
-
 	.toggle{
 		position: absolute;
 		top: 5px;
@@ -402,6 +416,10 @@ figure,
 		color: white;
 		font-size: 45px;
 		text-decoration: none;
+	}
+
+	.toggle.close{
+		display: none;
 	}
 
 	.toggle span,
@@ -519,7 +537,6 @@ figure,
 		z-index: 150;
 	}
 
-
 	#nav:target .logo{
 		background: url('../images/SF_logo_mobile_2.png') 0 0 no-repeat;
 		background-size: 200px 66px;
@@ -530,7 +547,8 @@ figure,
 	#nav:target .toggle{
 		display: none;
 	}
-	#nav:target .close{
+
+	#nav:target .toggle.close{
 		display: block;
 	}
 
