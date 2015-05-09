@@ -1,5 +1,22 @@
 /* page.about css */
 
+body.page-main > .bg {
+  background-image: url('../images/back_main.jpg');
+}
+
+body.page-about-aims > .bg {
+  background-image: url('../images/back_about_aims.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-main .charity_logo{
+    background-image: url('../images/back_main.jpg');
+  }
+  
+  body.page-about-aims .charity_logo{
+    background-image: url('../images/back_about_aims.jpg');
+  }
+}
 
 /*CONTENT*/
 
@@ -149,7 +166,7 @@
     text-decoration: none;
     border: 1px solid #D96441;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 0;
     text-align: center;
     padding: 7px 8px 7px 8px;
     float: none;
@@ -173,6 +190,10 @@
 
   .buttons {
     margin: 0px;
+  }
+
+  .motto {
+  	margin: 30px;
   }
 
 }
