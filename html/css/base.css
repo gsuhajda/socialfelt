@@ -306,7 +306,8 @@ figure,
 }
 
 .charity_logo a{
-  background: url("../images/charity_logo.png") 0 0 no-repeat;
+  background: url("../images/charity_logo.svg") 0 0 no-repeat;
+	background-size: 368px 78px;
   overflow: hidden;
   text-indent: 110%;
   white-space: nowrap;
