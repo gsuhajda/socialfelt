@@ -244,13 +244,6 @@ figure,
   display:none;
 }
 
-.logo_mobile,
-.logo_mobile_2{
-  display: none;
-  text-indent: 110%;
-  overflow: hidden;
-}
-
 /* CONTENT */
 
 .container{
@@ -361,9 +354,15 @@ figure,
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-	.menu,
-	.logo{
+	.menu{
 		display: none;
+	}
+
+	.logo{
+		background: url('../images/SF_logo_mobile.png') 0 0 no-repeat;
+		background-size: 200px 66px;
+		height: 66px;
+		width: 200px;
 	}
 
 	.toggle {
@@ -387,87 +386,46 @@ figure,
 		z-index:200;
 	}
 
-	.logo_mobile{
-		display: block;
-		background: url("../images/SF_logo_mobile.png") 0 0 no-repeat;
-		background-size: 200px 66px;
-		height: 66px;
-		width: 200px;
-		text-indent: 110%;
-		overflow: hidden;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+	.toggle.close{
+	display: none;
+}
 
-	.logo_mobile_2{
-		background: url("../images/SF_logo_mobile_2.png") 0 0 no-repeat;
-		background-size: 200px 66px;
-		height: 66px;
-		width: 200px;
-		text-indent: 110%;
-		overflow: hidden;
+	.toggle{
 		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.toggle span,
-	.close span,
-	.toggle span:after,
-	.toggle span:before,
-	.close span:after,
-	.close span:before{
-		display: block;
-		cursor: pointer;
-		border-radius: 1px;
-		height: 5px;
-		width: 45px;
-		background: white;
-		content: '';
-	}
-
-	.toggle span{
-		position: absolute;
-		top:20px;
-	}
-
-	.toggle span:before{
-		position: absolute;
-		top:15px;
-	}
-
-	.toggle span:after{
-		position: absolute;
-		top:30px;
-	}
-
-	.close span{
-		position: absolute;
-		top:20px;
-	}
-
-	.close span:before{
-		position: absolute;
-		top:15px;
-	}
-
-	.close span:after{
-		position: absolute;
-		top:30px;
-	}
-
-	.toggle,
-	.close{
-		position: absolute;
-		top: -5px;
-		right: 15px;
+		top: 5px;
+		right: 5px;
 		width: 50px;
 		height: 50px;
 		z-index: 200;
 		color: white;
 		font-size: 45px;
 		text-decoration: none;
+	}
+
+	.toggle span,
+	.toggle span:after,
+	.toggle span:before{
+		display: block;
+		cursor: pointer;
+		border-radius: 1px;
+		height: 4px;
+		width: 30px;
+		background: white;
+		content: '';
+		position: absolute;
+	}
+
+	.toggle span{
+		top:15px;
+		left: 10px;
+	}
+
+	.toggle span:before{
+		top:10px;
+	}
+
+	.toggle span:after{
+		top:20px;
 	}
 
 	.menu li,
@@ -538,12 +496,12 @@ figure,
 		top: 10px;
 	}
 
-	#top:target > .bg,
-	#top:target .container {
+	#nav:target > .bg,
+	#nav:target .container {
 		display: none;
 	}
 
-	#top:target .menu{
+	#nav:target .menu{
 		display: block;
 		z-index: 150;
 		background-color: #232323;
@@ -554,27 +512,27 @@ figure,
 		position: static;
 	}
 
-	#top:target .menu ul{
+	#nav:target .menu ul{
 		display: block;
 		z-index: 150;
 	}
 
-	#top:target .logo_mobile{
-		display: none;
+
+	#nav:target .logo{
+		background: url('../images/SF_logo_mobile_2.png') 0 0 no-repeat;
+		background-size: 200px 66px;
+		height: 66px;
+		width: 200px;
 	}
 
-	#top:target .logo_mobile_2{
+	#nav:target .toggle{
+		display: none;
+	}
+	#nav:target .close{
 		display: block;
 	}
 
-	#top:target .toggle{
-		display: none;
-	}
-	#top:target .close{
-		display: block;
-	}
-
-	#top:target .header{
+	#nav:target .header{
 		position: absolute;
 	}
 
