@@ -133,11 +133,7 @@ input[type='submit']:hover {
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-	.menu,
-	.logo {
-		display: none;
-	}
-
+	
 	input[type='submit'] {
 		width: 210px;
 		margin: auto;

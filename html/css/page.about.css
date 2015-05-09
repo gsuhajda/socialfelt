@@ -144,11 +144,6 @@ body.page-about-whatisfelt > .bg {
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-  .menu,
-  .logo {
-    display: none;
-  }
-
   .card {
     width: 100%;
   }
@@ -175,7 +170,6 @@ body.page-about-whatisfelt > .bg {
     margin: auto;
     display: block;
     width: 260px;
-
   }
 
   .container .buttons a {
