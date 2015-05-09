@@ -12,6 +12,10 @@ body.page-about-beginnings > .bg {
   background-image: url('../images/beginnings_bg.jpg');
 }
 
+body.page-about-felttherapy > .bg {
+  background-image: url('../images/back_felttherapy.jpg');
+}
+
 body.page-about-whatisfelt > .bg {
   background-image: url('../images/whatisfelt_bg.jpg');
 }
@@ -27,6 +31,10 @@ body.page-about-whatisfelt > .bg {
 
   body.page-about-beginnings .charity_logo{
     background-image: url('../images/beginnings_bg.jpg');
+  }
+
+  body.page-about-felttherapy .charity_logo{
+    background-image: url('../images/back_felttherapy.jpg');
   }
 
   body.page-about-whatisfelt .charity_logo{
