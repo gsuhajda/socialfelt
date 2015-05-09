@@ -10,6 +10,15 @@ body.page-contact > .bg {
   }
 }
 
+.container_item {
+	display: none;
+}
+
+.container.show-success .container_item.success,
+.container.show-form .container_item.form{
+	display: block;
+}
+
 small span,
 label span {
 	color: #dc5656;
@@ -118,17 +127,25 @@ input[type='submit']:hover {
 
 .error-message {
 	position: absolute;
+	display: none;
 	top: 0; 
 	right: 0;
 	color: #ed1c24;
 	font-weight: 700;
 }
 
+.error .error-message {
+	display: block;
+}
+
 .error textarea,
 .error input[type='email'] {
     border-color: #ed1c24;
     border-width: 2px;
-	outline: 0;
+    outline: 0;
+    top: 0px;
+    left: -1px;
+    position: relative;
 } 
 
 /* small screen, "mobile" */
