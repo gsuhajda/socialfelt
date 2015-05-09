@@ -423,7 +423,8 @@ figure,
 		text-decoration: none;
 	}
 
-	.menu li {
+	.menu li,
+	.menu .submenu li:first-child {
 		margin: 0;
 	}
 
