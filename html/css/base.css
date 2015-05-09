@@ -157,6 +157,7 @@ figure,
 
 .menu .links a:before {
 	background: url('../images/icons.png') no-repeat;
+	background-size: 48px 48px;
 	content: '';
 	display: block;
 	height: 24px;
