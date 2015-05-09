@@ -1,4 +1,15 @@
 /* page.services css */
+
+body.page-services > .bg {
+  background-image: url('../images/back_services.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-services .charity_logo{
+    background-image: url('../images/back_services.jpg');
+  }
+}
+
 .services-img {
 	margin-left: -40px;
 	margin-bottom: 15px;
@@ -10,141 +21,39 @@
 	margin-top: -15px;
 }
 
-
-/* táblázatos verzió
-
-		tr > td:first-child {
-			font-weight: 700;
-			width: 45%;
-			vertical-align: top;
-		}
-
-		td {
-			border-top: solid #d96441 1px;
-			padding: 10px 0;
-		}
-
-		.border-top {
-			border-top-color: transparent;
-		}
-
-		.services-table {
-			margin-bottom: 20px;
-		}
-
-*/
-
-
-dl dt {
-	font-weight: 700;
-	width: 45%;
-	float: left;
-	clear: both;
-	border-top: solid #d96441 1px;
-	padding: 10px 0;
-}
-
-dl dd {
-	width: 55%;
-	float: right;
-	margin: 0;
-	border-top: solid #d96441 1px;
-	padding: 10px 0;
-}
-
-dl dd:last-child {
-	margin-bottom: 15px;
-}
-
-dl dt:first-child {
-	border-top: transparent;
-}
-
-.dd-top-border {
-	border-top: transparent;
-}
-
 h2 {
 	clear: both;
 }
 
+dl {
+	margin-bottom: 15px;
+}
+
+dl dt,
+dl dd {
+	width: 45%;
+	float: left;
+	border-top: solid #d96441 1px;	
+	padding: 10px 0;
+	margin: 0;
+}
+
+dl dt {
+	font-weight: 700;
+	clear: both;
+}
+
+dl dd {
+	width: 55%;
+}
+
+dl dt:first-child,
+dl dt:first-child + dd {
+	border-top: 0;
+}
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
-	.links,
-	.mainmenu,
-	.social {
-		display: none;
-	}
-
-	.mainmenu .close {
-		display: none;
-	}
-
-	.menu {
-		left: 0;
-		right: 0;
-		top: 0;
-		width: 100%;
-		z-index: 40;
-	}
-
-	.menu .toggle {
-		background: yellow;
-		height: 50px;
-		width: 50px;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-
-	#nav:target .menu {
-		width: auto;
-		background: #d96441;
-		padding: 0 20px;
-	}
-
-	#nav:target .mainmenu {
-		display: block;
-		margin-top: 60px;
-	}	
-	
-	#nav:target .links,
-	#nav:target .social {
-		display: block;
-		margin-top: 0;
-	}	
-
-	#nav:target .mainmenu .close {
-		display: block;
-	}
-
-	#nav:target .toggle .close {
-		display: block;
-	}
-
-	.header {
-		top: 0;
-		left: 0;
-		width: 250px;
-		z-index: 60;
-	}
-
-	.logo {
-		top: 0;
-		height: 65px;
-		width: auto;
-		margin-top: -7px;
-		background: url("../images/SF_logo_mobile.png") 0 0 no-repeat;
-		background-size: 200px 75px;
-		display: block;
-		z-index: 60;
-	}
-
-	.logo:hover {
-	background-position: 0 0;
-	}
-
 	.container {
 		left: 0;
 		width: 100%;
@@ -157,19 +66,22 @@ h2 {
 		width: 100%;
 	}
 
-	dl dt {
+	dl dt,
+	dl dd {
 		width: auto;
 		float: none;
-		clear: both;
+		clear: none;
+		margin: 0;
+	}
+
+	dl dt {
 		border-top: solid #d96441 1px;
 		padding-bottom: 0;
 	}
 
 	dl dd {
-		width: auto;
-		float: none;
-		margin: 0;
-		border-top: none;
+		border-top: 0;
+		padding-top: 0;
 	}
 
 	
