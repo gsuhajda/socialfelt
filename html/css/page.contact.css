@@ -1,5 +1,15 @@
 /* page.contact css */
 
+body.page-contact > .bg {
+  background-image: url('../images/back_contact.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-contact .charity_logo{
+    background-image: url('../images/back_contact.jpg');
+  }
+}
+
 small span,
 label span {
 	color: #dc5656;
@@ -57,8 +67,8 @@ textarea:focus {
 }
 
 input[type='submit'] {
-	background: white;
-	color: #dc5656;
+	background: #D96441;
+	color: #fff;
 	width: 250px;
 	height: 50px;
 	margin: auto;
@@ -71,11 +81,11 @@ input[type='submit'] {
 input[type='submit']:hover {
 	text-decoration: none;
 	border: 1px solid #D96441;
-	background-color: #D96441;
+	background-color: #fff;
 	border-radius: 5px;
 	text-align: center;
 	padding: 7px 9px 7px 9px;
-	color: #f8f8f8;
+	color: #D96441;
 }
 
 /* SENT page*/
@@ -87,7 +97,7 @@ input[type='submit']:hover {
 .new-button a {
   text-decoration: none;
   border: 1px solid #D96441;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   text-align: center;
   padding: 7px 8px 7px 8px;
@@ -97,6 +107,11 @@ input[type='submit']:hover {
 	text-decoration: none;
 	background-color: #D96441;
  	color: #f8f8f8;
+}
+
+.success {
+	text-align: center;
+	padding-top: 60px;
 }
 
 /* ERROR page*/
