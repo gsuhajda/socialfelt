@@ -238,6 +238,18 @@ figure,
   background-color: rgba(255, 255, 255, .0);
 }
 
+.toggle,
+.close{
+  display:none;
+}
+
+.logo_mobile,
+.logo_mobile_2{
+  display: none;
+  text-indent: 110%;
+  overflow: hidden;
+}
+
 /* CONTENT */
 
 .container{
@@ -348,12 +360,176 @@ figure,
 
 /* small screen, "mobile" */
 @media all and (max-width: 767px) {
+	.menu,
+	.logo{
+		display: none;
+	}
+
 	.container{
 		width: auto;
 		position: relative;
 		left: auto;
 		margin: 100px 20px 0;
 	}
+
+	.header{
+		right: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		position: absolute;
+		z-index:200;
+	}
+
+	.logo_mobile{
+		display: block;
+		background: url("../images/SF_logo_mobile.png") 0 0 no-repeat;
+		background-size: 200px 66px;
+		height: 66px;
+		width: 200px;
+		text-indent: 110%;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.logo_mobile_2{
+		background: url("../images/SF_logo_mobile_2.png") 0 0 no-repeat;
+		background-size: 200px 66px;
+		height: 66px;
+		width: 200px;
+		text-indent: 110%;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.toggle{
+		display: block;
+	}
+
+	.toggle,
+	.close{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 50px;
+		height: 50px;
+		z-index: 200;
+		color: white;
+		font-size: 45px;
+		text-decoration: none;
+	}
+
+	.menu li {
+		margin: 0;
+	}
+
+	.menu a {
+		padding: 0 0 0 20px;
+		margin: 0;
+		height: 44px;
+		line-height: 40px;
+	}
+
+	.menu .active{
+		background-color: #232323;
+		border-radius: 0px;
+		text-shadow: none;
+	}
+
+	.menu a:hover,
+	.menu a.active{
+		background-color: #232323;
+		border-radius: 0px;
+		text-shadow: none;
+	}
+
+	.menu .mainmenu {
+		margin-bottom: 0;
+	}
+
+	.menu .mainmenu .submenu li {
+		padding: 0;
+	}
+
+	.menu .mainmenu .submenu li a{
+		padding-left: 40px;
+		height: 40px;
+		line-height: 36px;
+	}
+
+	.menu .mainmenu li{
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+
+	.menu .social {
+		padding-left: 20px;
+	}
+
+	.menu .links {
+		padding: 0;
+		height: 44px;
+		margin: 10px 0;
+	}
+
+	.menu .links li {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	.menu .links li:first-child {
+		border-right: 2px solid rgba(255,255,255,.2);
+	}
+
+	.menu .links li a:before {
+		top: 10px;
+	}
+
+	#top:target > .bg,
+	#top:target .container {
+		display: none;
+	}
+
+	#top:target .menu{
+		display: block;
+		z-index: 150;
+		background-color: #232323;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding: 50px 0 25px 0;
+		position: static;
+	}
+
+	#top:target .menu ul{
+		display: block;
+		z-index: 150;
+	}
+
+	#top:target .logo_mobile{
+		display: none;
+	}
+
+	#top:target .logo_mobile_2{
+		display: block;
+	}
+
+	#top:target .toggle{
+		display: none;
+	}
+	#top:target .close{
+		display: block;
+	}
+
+	#top:target .header{
+		position: absolute;
+	}
+
 }
 
 @media all and (max-width: 600px) {
