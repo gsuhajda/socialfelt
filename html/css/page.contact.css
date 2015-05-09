@@ -97,7 +97,7 @@ input[type='submit']:hover {
 .new-button a {
   text-decoration: none;
   border: 1px solid #D96441;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 5px;
   text-align: center;
   padding: 7px 8px 7px 8px;
