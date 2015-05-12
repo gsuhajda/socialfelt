@@ -10,23 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-			$('.card').each(function(){
-				var $card = $(this);
-				$('[data-open-card]',$card).click(function(){
-					if ($card.hasClass('open')) {
-						$card.removeClass('open');
-					} else {
-						$('.card.open').removeClass('open');
-						$card.addClass('open');
-					}
-				});
-			});
-		});
-	</script>
-
+	<script src="js/script.js"></script>
 </head>
 
 <body class="page-projects" id="nav">
@@ -81,7 +65,7 @@
 			<h1 class="card_h1">Current projects</h1>
 
 
-			<div class="card">
+			<div class="card" data-project-card>
 
 				<div class="card_header cf">
 
@@ -124,7 +108,7 @@
 			</div>
 
 
-			<div class="card">
+			<div class="card" data-project-card>
 
 				<div class="card_header cf">
 
@@ -167,7 +151,7 @@
 			</div>
 
 
-						<div class="card">
+						<div class="card" data-project-card>
 
 							<div class="card_header cf">
 
@@ -209,7 +193,7 @@
 
 						</div>
 
-						<div class="card">
+						<div class="card" data-project-card>
 
 							<div class="card_header cf">
 

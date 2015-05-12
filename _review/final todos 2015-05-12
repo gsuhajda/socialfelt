@@ -1,0 +1,17 @@
+# final todos
+
+- css selectorok neveinek egysegesitese
+- html validalas
+- css/html indent egysegesitese
+- kep alt tagek
+- ikonok retina verzioja (projects open, paypal)
+- social ikonok state-jei egy spriteba (retina)
+- kep fajlok neveinek egysegesitese, fajlok strukturalasa, tartalom es design kepek szetvalasztasa
+- kep fajlok fajlmeretenek optimalizalasa
+- GA bekotes
+- meta es og: tagek
+- contact form: submit button focus allapot, error input focus allapot
+
+done:
+- js kulon fajlba szervezese
+- js bindolas data- attributumokra
