@@ -1,0 +1,280 @@
+/* page.about css */
+
+body.page-main > .bg {
+  background-image: url('../images/bg_main.jpg');
+}
+
+body.page-about-aims > .bg {
+  background-image: url('../images/bg_aims.jpg');
+}
+
+body.page-about-beginnings > .bg {
+  background-image: url('../images/bg_beginnings.jpg');
+}
+
+body.page-about-felttherapy > .bg {
+  background-image: url('../images/bg_felttherapy.jpg');
+}
+
+body.page-about-whatisfelt > .bg {
+  background-image: url('../images/bg_whatisfelt.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-main .charity_logo{
+    background-image: url('../images/bg_main.jpg');
+  }
+
+  body.page-about-aims .charity_logo{
+    background-image: url('../images/bg_aims.jpg');
+  }
+
+  body.page-about-beginnings .charity_logo{
+    background-image: url('../images/bg_beginnings.jpg');
+  }
+
+  body.page-about-felttherapy .charity_logo{
+    background-image: url('../images/bg_felttherapy.jpg');
+  }
+
+  body.page-about-whatisfelt .charity_logo{
+    background-image: url('../images/bg_whatisfelt.jpg');
+  }
+}
+
+/*CONTENT*/
+
+ h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px;
+}
+
+.buttons {
+  margin: 30px 0px 50px 0px;
+  text-align: -webkit-center;
+}
+
+.container .buttons a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 8px 7px 8px;
+  float: none;
+}
+
+.container .buttons a:hover {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 8px 7px 8px;
+  color: #f8f8f8;
+  float: none;
+}
+
+.pics {
+  margin: 40px 0px 40px 0px;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+.container img {
+  float: right;
+  border: 2px solid #D96441;
+  border-radius: 5px;
+  margin: 0 0 0 16px;
+  width: 200px;
+}
+
+.container a {
+  color: #D96441;
+}
+
+.container a:hover {
+  color: #f8f8f8;
+}
+
+.pics img {
+  float:left;
+  width: 150px;
+  border: 2px solid #D96441;
+  border-radius: 75px;
+  display: block;
+  height: 150px;
+}
+
+.motto {
+  font-style: italic;
+  font-size: 18;
+  margin: 60px;
+  font-family: 'Noto Serif', serif;
+  color: rgb(217, 100, 65);
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.cta a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+}
+
+.cta a:hover {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: #D96441;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 7px 9px 7px 9px;
+  color: #f8f8f8;
+}
+
+
+
+
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+
+  .pics img {
+    float: none;
+  }
+
+  .container .pics .mobile img {
+    margin: auto;
+    float: none;
+    display: block;
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+  }
+
+  .container .pics .desktop img {
+    display: none;
+  }
+
+  .container img {
+    float: none;
+    margin: auto;
+    display: block;
+    width: 260px;
+  }
+
+  .container .buttons a {
+    text-decoration: none;
+    border: 1px solid #D96441;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 7px 8px 7px 8px;
+    float: none;
+    display: block;
+    width: 260px;
+  }
+
+  .container .buttons a:hover {
+    text-decoration: none;
+    border: 1px solid #D96441;
+    background-color: #D96441;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    padding: 7px 8px 7px 8px;
+    color: #f8f8f8;
+    float: none;
+    display: block;
+    width: 260px;
+  }
+
+  .buttons {
+    margin: 0px;
+  }
+
+  .motto {
+  	margin: 30px;
+  }
+
+}
+
+
+
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+  .pics img {
+    float: none;
+  }
+
+  .container .pics .mobile img {
+    margin: auto;
+    float: none;
+    display: block;
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    border: 2px solid #D96441;
+  }
+
+  .container .pics .desktop img {
+    display: none;
+  }
+
+  .desktop figure {
+    display: none;
+  }
+
+  .pics {
+    margin: 40px;
+  }
+
+  .container .buttons a {
+    text-decoration: none;
+    border: 1px solid #D96441;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    padding: 7px 8px 7px 8px;
+    float: none;
+    display: block;
+    width: 260px;
+  }
+
+  .container .buttons a:hover {
+    text-decoration: none;
+    border: 1px solid #D96441;
+    background-color: #D96441;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    padding: 7px 8px 7px 8px;
+    color: #f8f8f8;
+    float: none;
+    display: block;
+    width: 260px;
+  }
+
+  .buttons {
+    margin: 0px;
+  }
+
+}

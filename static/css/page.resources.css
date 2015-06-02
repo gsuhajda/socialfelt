@@ -1,0 +1,32 @@
+/* page.resources css */
+
+body.page-resources > .bg {
+	background-image: url('../images/bg_resources.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-resources .charity_logo{
+    background-image: url('../images/bg_resources.jpg');
+  }
+}
+
+.container_item{
+  min-height: 100px;
+}
+
+.container_item .resources_logo{
+  background-color: white;
+  border-radius: 5px;
+  margin: 40px 0 20px 0;
+  opacity: .75;
+}
+
+.container_item .resources_logo img{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.page-resources .container_item h2{
+  margin-top: 40px
+}

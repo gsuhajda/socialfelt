@@ -1,0 +1,642 @@
+body{
+	color: #403836;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+body > .bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: url('../images/bg_main.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body.page_main > .bg {
+	background-image: url('../images/bg_main.jpg');
+}
+
+/* TOOLS */
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+/* override normalize */
+
+figure,
+.header h1 {
+	margin: 0;
+}
+
+/* MENU */
+
+.header {
+	height: 140px;
+	left: 90px;
+	position: fixed;
+	top: 30px;
+	width: 140px;
+	z-index: 20;
+}
+
+.logo{
+	background: url('../images/socialfelt_logo.png') 0 0 no-repeat;
+	background-size: 280px 140px;
+	cursor: pointer;
+	display: block;
+	height: 140px;
+	overflow: hidden;
+	text-indent: 110%;
+	width: 140px;
+}
+
+.logo:hover{
+	background-position: -140px 0;
+}
+
+.menu {
+	color: white;
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+	left: 70px;
+	position: fixed;
+	text-shadow: 1px 1px 2px black;
+	top: 170px;
+	width: 200px;
+	z-index: 20;
+}
+
+.menu ul{
+	padding-left: 0px;
+}
+
+.menu li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.menu li:first-child{
+	margin-top: 0;
+}
+
+.menu a{
+	color: white;
+	display: block;
+	margin: 0 -15px;
+	padding: 3px 15px;
+	text-decoration: none;
+}
+
+.menu a:hover,
+.menu a.active{
+	color: #D96441;
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	text-shadow: none;
+}
+
+.menu .mainmenu {
+	margin: 25px 0px;
+}
+
+.menu .submenu{
+	font-size: 14px;
+}
+
+.menu .submenu li{
+	padding-left: 40px;
+}
+
+.menu .submenu li:first-child{
+	margin-top: 5px;
+}
+
+.menu .links{
+	border-top: 2px solid rgba(255, 255, 255, .3);
+	border-bottom: 2px solid rgba(255, 255, 255, .3);
+	margin: 25px 0px;
+	padding: 7px 0 15px 0;
+}
+
+.menu .links a{
+	display: block;
+	padding-left: 55px;
+	position: relative;
+}
+
+.menu .links a:before {
+	background: url('../images/icons.png') no-repeat;
+	background-size: 48px 48px;
+	content: '';
+	display: block;
+	height: 24px;
+	left: 15px;
+	position: absolute;
+	top: 3px;
+	width: 24px;
+}
+
+.menu .links a:hover{
+	color: #D96441;
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	text-shadow: none;
+}
+
+.menu .links .blog a:before{
+	background-position: 0 0;
+}
+
+.menu .links .blog a:hover:before{
+	background-position: -24px 0;
+}
+
+.menu .links .shop a:before{
+	background-position: 0 -24px;
+}
+
+.menu .links .shop a:hover:before{
+	background-position: -24px -24px;
+}
+
+/* social */
+
+.menu .social li{
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+.menu .social li:last-child{
+	margin-right: 0;
+}
+
+.menu .social li a{
+	display: block;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	margin: 0;
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url("../images/icons_social.png") 0 0 no-repeat;
+	background-size: 96px 64px;
+}
+.menu .social li a:hover{ background-color: transparent; }
+
+.menu .social .f a{ background-position: 0 0; }
+.menu .social .t a{ background-position: -32px 0; }
+.menu .social .p a{ background-position: -64px 0; }
+.menu .social .f a:hover{ background-position: 0 -32px; }
+.menu .social .t a:hover{ background-position: -32px -32px; }
+.menu .social .p a:hover{ background-position: -64px -32px; }
+
+.toggle,
+.close{
+  display:none;
+}
+
+/* CONTENT */
+
+.container{
+	min-height: 400px;
+	margin: 0 auto;
+	width: 600px;
+	position: relative;
+	left: 140px;
+	z-index: 20;
+}
+
+.container_item{
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	min-height: 400px;
+	margin-top: 40px;
+	padding: 30px 40px;
+	box-sizing: border-box;
+}
+
+.container_item:last-child{
+	margin-bottom: 40px;
+}
+
+.container_item h1{
+	color: #D96441;
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 15px 0;
+	letter-spacing: -1px;
+	text-rendering: optimizeLegibility;
+}
+
+.container_item h2{
+	color: #D96441;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.4;
+	margin: 0 0 15px 0;
+}
+
+.container_item p{
+}
+
+.container_item a{
+  text-decoration: none;
+  color: #D96441;
+}
+
+.container_item a:hover {
+  text-decoration: underline;
+  color: #D96441;
+}
+
+.charity_logo{
+  margin: 50px auto;
+  width: 184px;
+  height: 78px;
+}
+
+.charity_logo a {
+  display: block;
+  width: 184px;
+  height: 78px;  
+  padding: 10px 15px;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+  position: relative;
+  border-radius: 10px;
+}
+
+.charity_logo a:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -39px 0 0 -92px;
+  background: url("../images/charity_logo.svg") 0 0 no-repeat;
+  background-size: 368px 78px;
+  width: 184px;
+  height: 78px;
+}
+
+.charity_logo a:hover {
+	background: rgba(255,255,255,0.75);
+}
+
+.charity_logo a:hover:before{
+  background-position: -184px 0;
+}
+
+/* small height */
+@media all and (max-height: 700px) {
+	.header {
+		top: 20px;
+	}
+
+	.menu {
+		top: 160px;
+	}
+
+	.menu li,
+	.menu .submenu li:first-child{
+		margin-top: 4px;
+	}
+
+	.menu .mainmenu {
+		margin: 15px 0;
+	}
+
+	.menu .links {
+		margin: 15px 0;
+		padding-bottom: 10px;
+	}
+}
+
+/* even smaller height */
+@media all and (max-height: 640px) {
+	.header,
+	.menu {
+		position: absolute;
+	}
+}
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+	.menu{
+		display: none;
+	}
+
+	.logo{
+		background: url('../images/socialfelt_logo_mobile.png') 0 0 no-repeat;
+		background-size: 200px 66px;
+		height: 66px;
+		width: 200px;
+	}
+
+	.logo:hover {
+		background-position: 0 0;
+	}
+
+	.toggle {
+		display: block;
+	}
+
+	.container{
+		width: auto;
+		position: relative;
+		left: auto;
+		margin: 100px 20px 0;
+	}
+
+	.header{
+		right: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 65px;
+		position: absolute;
+		z-index:200;
+	}
+
+	.toggle{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		width: 50px;
+		height: 50px;
+		z-index: 200;
+		color: white;
+		font-size: 45px;
+		text-decoration: none;
+	}
+
+	.toggle.close{
+		display: none;
+	}
+
+	.toggle span,
+	.toggle span:after,
+	.toggle span:before{
+		display: block;
+		cursor: pointer;
+		border-radius: 1px;
+		height: 4px;
+		width: 30px;
+		background: white;
+		content: '';
+		position: absolute;
+	}
+
+	.toggle span{
+		top:15px;
+		left: 10px;
+	}
+
+	.toggle span:before{
+		top:10px;
+	}
+
+	.toggle span:after{
+		top:20px;
+	}
+
+	.menu li,
+	.menu .submenu li:first-child {
+		margin: 0;
+	}
+
+	.menu a {
+		padding: 0 0 0 20px;
+		margin: 0;
+		height: 44px;
+		line-height: 40px;
+	}
+
+	.menu .active{
+		background-color: #232323;
+		border-radius: 0px;
+		text-shadow: none;
+	}
+
+	.menu a:hover,
+	.menu a.active{
+		background-color: #232323;
+		border-radius: 0px;
+		text-shadow: none;
+	}
+
+	.menu .mainmenu {
+		margin-bottom: 0;
+	}
+
+	.menu .mainmenu .submenu li {
+		padding: 0;
+	}
+
+	.menu .mainmenu .submenu li a{
+		padding-left: 40px;
+		height: 40px;
+		line-height: 36px;
+	}
+
+	.menu .mainmenu li{
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+
+	.menu .social {
+		padding-left: 20px;
+	}
+
+	.menu .links {
+		padding: 0;
+		height: 44px;
+		margin: 10px 0;
+	}
+
+	.menu .links li {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	.menu .links li:first-child {
+		border-right: 2px solid rgba(255,255,255,.2);
+	}
+
+	.menu .links li a:before {
+		top: 10px;
+	}
+
+	#nav:target > .bg,
+	#nav:target .container {
+		display: none;
+	}
+
+	#nav:target .menu{
+		display: block;
+		z-index: 150;
+		background-color: #232323;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding: 50px 0 25px 0;
+		position: static;
+	}
+
+	#nav:target .menu ul{
+		display: block;
+		z-index: 150;
+	}
+
+	#nav:target .logo{
+		background: url('../images/socialfelt_logo_mobile_transparent.png') 0 0 no-repeat;
+		background-size: 200px 66px;
+		height: 66px;
+		width: 200px;
+	}
+
+	#nav:target .toggle{
+		display: none;
+	}
+
+	#nav:target .toggle.close{
+		display: block;
+	}
+
+	#nav:target .header{
+		position: absolute;
+	}
+
+}
+
+@media all and (max-width: 600px) {
+	.container {
+		width: 100%;
+		margin: 100px 0 0;
+	}
+
+	.container_item {
+		border-radius: 0;
+	}
+}
+
+@media all and (max-width: 400px) {
+	body > .bg {
+		position: static;
+		bottom: auto;
+		width: 100%;
+		height: 200px;
+	}
+
+	.container {
+		top: auto;
+		margin-top: 0;
+	}
+
+	.container_item {
+		padding: 20px;
+		border-radius: 0px;
+		margin: 0;
+		background: #c6c4c3;
+	}
+
+	.container_item:last-child{
+		margin-bottom: 0;
+	}
+
+	.charity_logo {
+		margin: 0;
+		width: 100%;
+		height: 150px;
+		padding: 36px 0;
+		box-sizing: border-box;
+		background-size: cover;
+		background-position: center bottom;
+	}
+
+	.charity_logo a {
+		margin: 0 auto;
+	}
+}
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+	.header {
+		left: 50px;
+	}
+
+	.menu {
+		font-size: 16px;
+		left: 30px;
+		width: 180px;
+	}
+
+	.container {
+		left: 110px;
+		width: 500px;
+	}
+
+	.container_item {
+		padding: 30px 25px;
+	}
+}
+
+/* sub1024 */
+@media all and (min-width: 860px) and (max-width: 1023px) {
+	.header {
+		left: 50px;
+	}
+
+	.menu {
+		left: 30px;
+	}
+
+	.container {
+		left: 120px;
+	}
+}
+
+/* big wide screen */
+@media all and (min-width: 1600px) {
+	.container {
+		left: auto; /* center the container */
+	}
+}
+
+/* big tall screen */
+@media all and (min-height: 900px) {
+	.container_item {
+		margin-top: 60px;
+	}
+
+	.container_item:last-child{
+		margin-bottom: 60px;
+	}
+}

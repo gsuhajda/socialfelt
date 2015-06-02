@@ -1,0 +1,105 @@
+/* page.services css */
+
+body.page-services > .bg {
+  background-image: url('../images/bg_services.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-services .charity_logo{
+    background-image: url('../images/bg_services.jpg');
+  }
+}
+
+.services-img {
+	margin: 25px 0 15px -40px;
+}
+
+.services-h3 {
+	font-weight: 400;
+	color: #b87561;
+	margin-top: -15px;
+}
+
+h2 {
+	clear: both;
+}
+
+dl {
+	margin-bottom: 15px;
+}
+
+dl dt,
+dl dd {
+	width: 45%;
+	float: left;
+	border-top: solid #d96441 1px;	
+	padding: 10px 0;
+	margin: 0;
+}
+
+dl dt {
+	font-weight: 700;
+	clear: both;
+}
+
+dl dd {
+	width: 55%;
+}
+
+dl dt:first-child,
+dl dt:first-child + dd {
+	border-top: 0;
+}
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+	.container {
+		left: 0;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.services-img img {
+		margin-left: 20px;
+		width: 100%;
+	}
+
+	dl dt,
+	dl dd {
+		width: auto;
+		float: none;
+		clear: none;
+		margin: 0;
+	}
+
+	dl dt {
+		border-top: solid #d96441 1px;
+		padding-bottom: 0;
+	}
+
+	dl dd {
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	
+}
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+	.services-img img {
+		margin-left: 15px;
+		width: 500px;
+	}
+}
+
+/* sub1024 */
+@media all and (min-width: 860px) and (max-width: 1023px) {
+	
+}
+
+/* big screen */
+@media all and (min-width: 1600px) {
+
+}

@@ -1,0 +1,194 @@
+/* page.contact css */
+
+body.page-contact > .bg {
+  background-image: url('../images/bg_contact.jpg');
+}
+
+@media all and (max-width: 400px) {
+  body.page-contact .charity_logo{
+    background-image: url('../images/bg_contact.jpg');
+  }
+}
+
+.container_item {
+	display: none;
+}
+
+.container.show-success .container_item.success,
+.container.show-form .container_item.form{
+	display: block;
+}
+
+small span,
+label span {
+	color: #dc5656;
+}
+
+form > div {
+	margin-top: 20px;
+	position: relative;
+}
+
+form > div.email-confirm {
+	display: none;
+}
+
+input,
+textarea {
+	width: 520px;
+	-webkit-appearance: none;
+}
+
+label {
+    font-weight: 700;
+    margin-top: 15px;
+    color: #403836;
+}
+
+textarea,
+input[type='text'],
+input[type='email'] {
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 0 13px;
+    border-radius: 3px;
+    border: 1px solid #D96441;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+textarea {
+	height: 165px;
+	max-width: 520px;
+	max-height: 400px;
+	line-height: 20px;
+	padding: 10px 13px;
+}
+
+input[type='text'], 
+input[type='email'] {
+    height: 40px;
+    line-height: 40px;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+    border-color: rgba(74, 66, 97, 1);
+    outline: 0;
+}
+
+input[type='submit'] {
+	background: #D96441;
+	color: #fff;
+	width: 250px;
+	height: 50px;
+	margin: auto;
+	border: 1px solid #D96441;
+	border-radius: 5px;
+	text-align: center;
+	padding: 7px 8px 7px 8px;
+}
+
+input[type='submit']:hover {
+	text-decoration: none;
+	border: 1px solid #D96441;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	padding: 7px 9px 7px 9px;
+	color: #D96441;
+}
+
+input[type='submit']:focus {
+	outline: 0;
+}
+
+/* SENT page*/
+
+.new-button {
+	margin-top: 30px;
+}
+
+.new-button a {
+  text-decoration: none;
+  border: 1px solid #D96441;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  padding: 7px 8px 7px 8px;
+}
+
+.new-button a:hover {
+	text-decoration: none;
+	background-color: #D96441;
+ 	color: #f8f8f8;
+}
+
+.success {
+	text-align: center;
+	padding-top: 60px;
+}
+
+/* ERROR page*/
+
+.error-message {
+	position: absolute;
+	display: none;
+	top: 0; 
+	right: 0;
+	color: #ed1c24;
+	font-weight: 700;
+}
+
+.error .error-message {
+	display: block;
+}
+
+.error textarea,
+.error input[type='email'] {
+    border-color: #ed1c24;
+    border-width: 2px;
+    outline: 0;
+    top: 0px;
+    left: -1px;
+    position: relative;
+} 
+
+/* small screen, "mobile" */
+@media all and (max-width: 767px) {
+	
+	input[type='submit'] {
+		width: 210px;
+		margin: auto;
+		margin-top: 24px;
+		}
+
+	textarea {
+		min-width: 100%;
+	}
+
+	/* ERROR page*/
+	.error-message {
+		position: static;
+		margin-top: 0;
+	}
+
+}
+
+/* ipad portrait and up */
+@media all and (min-width: 768px) and (max-width: 859px) {
+
+}
+
+/* sub1024 */
+@media all and (min-width: 860px) and (max-width: 1023px) {
+
+}
+
+
+/* big screen */
+@media all and (min-width: 1600px) {
+	
+}
