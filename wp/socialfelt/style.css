@@ -1,0 +1,175 @@
+/*
+Theme Name: SocialFelt
+Theme URI: http://socialfelt.org
+Author: MOME CODE SocialFelt Team
+Author URI: http://momecode.mome.hu/
+Description: based on Twenty Fifteen 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body{
+	color: #403836;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+body > .bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: url('images/bg_main.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body.page_main > .bg {
+	background-image: url('images/bg_main.jpg');
+}
+
+/* TOOLS */
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+/* override normalize */
+
+figure,
+.header h1 {
+	margin: 0;
+}
+
+/* MENU */
+
+.header {
+	height: 140px;
+	left: 90px;
+	position: fixed;
+	top: 30px;
+	width: 140px;
+	z-index: 20;
+}
+
+.logo{
+	background: url('images/socialfelt_logo.png') 0 0 no-repeat;
+	background-size: 280px 140px;
+	cursor: pointer;
+	display: block;
+	height: 140px;
+	overflow: hidden;
+	text-indent: 110%;
+	width: 140px;
+}
+
+.logo:hover{
+	background-position: -140px 0;
+}
+
+#secondary .main-navigation {
+	color: white;
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+	left: 70px;
+	position: fixed;
+	text-shadow: 1px 1px 2px black;
+	top: 170px;
+	width: 200px;
+	z-index: 20;
+}
+
+#secondary .main-navigation .dropdown-toggle {
+	display: none;
+}
+
+#secondary .main-navigation ul{
+	padding-left: 0px;
+}
+
+#secondary .main-navigation li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+#secondary .main-navigation li:first-child{
+	margin-top: 0;
+}
+
+#secondary .main-navigation a{
+	color: white;
+	display: block;
+	margin: 0 -15px;
+	padding: 3px 15px;
+	text-decoration: none;
+}
+
+#secondary .main-navigation a:hover,
+#secondary .main-navigation a.active{
+	color: #D96441;
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	text-shadow: none;
+}
+
+#secondary .main-navigation .mainmenu {
+	margin: 25px 0px;
+}
+
+#secondary .main-navigation .sub-menu{
+	font-size: 14px;
+}
+
+#secondary .main-navigation .sub-menu li{
+	padding-left: 40px;
+}
+
+#secondary .main-navigation .sub-menu li:first-child{
+	margin-top: 5px;
+}
+
+/* CONTENT */
+
+.container{
+	min-height: 400px;
+	margin: 0 auto;
+	width: 600px;
+	position: relative;
+	left: 140px;
+	z-index: 20;
+}
+
+.container_item{
+	background-color: rgba(255, 255, 255, .75);
+	border-radius: 5px;
+	min-height: 400px;
+	margin-top: 40px;
+	padding: 30px 40px;
+	box-sizing: border-box;
+}
+
+.container_item:last-child{
+	margin-bottom: 40px;
+}
