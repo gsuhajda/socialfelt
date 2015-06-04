@@ -1,0 +1,9 @@
+- oldalanként más háttér (ACF?)
+- oldalak tartalma (copypaste+formázás)
+- érdekesebb oldalak: home, services
+- contact form (custom page template + ajax)
+- research (custom post type + ACF)
+- projects (custom post type + ACF)
+- menü social links
+- footer
+- resources
