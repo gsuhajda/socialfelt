@@ -1,9 +1,12 @@
-- oldalanként más háttér (ACF?)
+- wp tisztogatás, beállítások
+- font beállítás
+- footer
 - oldalak tartalma (copypaste+formázás)
+- ACF telepítés
+- oldalanként más háttér (ACF)
 - érdekesebb oldalak: home, services
 - contact form (custom page template + ajax)
 - research (custom post type + ACF)
 - projects (custom post type + ACF)
 - menü social links
-- footer
 - resources
