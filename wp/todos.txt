@@ -4,9 +4,10 @@
 - oldalak tartalma (copypaste+formázás)
 - ACF telepítés
 - oldalanként más háttér (ACF)
-- érdekesebb oldalak: home, services
+- tartalom formázás és képek
 - contact form (custom page template + ajax)
 - research (custom post type + ACF)
 - projects (custom post type + ACF)
+- érdekesebb oldalak: home, services
 - menü social links
 - resources
